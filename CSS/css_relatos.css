@@ -56,13 +56,15 @@ main {
 .novo_relato input {
     width: 800px;
     border-radius: 3px;
-    background-color: var(--corfundo);
+    background-color: #f6f0fa;
+    border: solid 2px var(--bordas);
 }
 
 .novo_relato textarea {
     width: 800px;
     border-radius: 3px;
-    background-color: var(--corfundo);
+    background-color: #f6f0fa;
+    border: solid 2px var(--bordas);
 }
 
 button {
@@ -88,4 +90,3 @@ button {
     margin: 10px;
     position: fixed;
 }
-
