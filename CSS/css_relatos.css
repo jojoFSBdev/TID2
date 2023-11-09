@@ -1,0 +1,72 @@
+:root {
+    --corfundo: rgba(233, 224, 252);
+}
+
+main { 
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 900px 300px;
+}
+
+.div_forum {
+    background-color: var(--corfundo) ;
+    padding: 10px;
+    border-radius: 5px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.relato_conteudo {
+    width: auto;
+}
+
+.relato_conteudo div, h2, p {
+    margin: 0;
+}
+
+.relato_conteudo div {
+    background-color: red;
+    width: auto;
+}
+
+
+.relato {
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.novo_relato {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+    border: solid blue;
+    background-color: blueviolet;
+}
+
+.novo_relato textarea {
+    width: 800px;
+    border-radius: 3px;
+    background-color: var(--corfundo);
+}
+
+.extra_forum {
+    top: 0%;
+    height: 300px;
+    width: 300px;
+    background-color: var(--corfundo);
+    margin: 5px;
+    border-radius: 5px;
+    position:initial;
+}
+
+.extra_forum button {
+    height: 30px;
+    margin: 10px;
+    position: fixed;
+}
+

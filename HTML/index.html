@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../CSS/css_geral.css">
+    <link rel="stylesheet" href="../CSS/css_relatos.css">
+
+    <script src="../JS/script.js"></script>
+</head>
+<body>
+    <head>
+        <div id="div_head">
+            <div id="form_head">
+                <a href="{%url 'aila'%}">CHAT</a>
+
+                <a href="{%url 'inicio'%}">INÍCIO</a>
+                
+                <a href="{%url 'faq'%}">FAQ</a>
+
+                <a href=""><u>RELATOS</u></a>
+            </div>
+            <hr>
+        </div>
+    </head>
+    <main>
+        <div class="div_forum">
+            <div class="novo_relato">
+                <div class="div_titulo_relato">
+                    <p>Titulo</p>
+                    <input class = "estilo_titulo_relato" id = "entrada_titulo" type="text" placeholder="Insira o Titulo">
+                </div>
+                <div class="div_corpo_relato">
+                    <p>Relato</p>
+                    <textarea class = "estilo_corpo_relato" id="entrada_corpo" cols="30" rows="10" placeholder="Diga algo..."></textarea>
+                </div>
+                <div>
+                    <button onclick = "Cancelar()">Cancelar</button>
+                    <button onclick="EnviarRelato()">Enviar</button>
+                </div>
+            </div>
+            <div class = "relato_conteudo">
+                <a href="">
+                    <div>
+                        <h2>Joaquim</h2>
+                        <textarea>adasdasdasd</textarea>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class = "extra_forum">
+            <button onclick = "NovoRelato()">Novo Relato</button>
+        </div>
+    </main>
+</body>
+</html>
