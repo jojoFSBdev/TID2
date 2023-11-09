@@ -11,6 +11,19 @@
     <script src="../JS/script.js"></script>
 </head>
 <body>
+    <div id="popupContainer">
+        <div id="popupContent">
+            <!-- Conteúdo do pop-up -->
+            <h2>Atenção!</h2>
+            <p>Deseja realmente acionar o guardião?</p>
+            <div id="format">
+                <form action="{% url 'inicio'%}" method="POST">{% csrf_token %}
+                    <button type="submit" id="botao_confirmar">Confirmar</button>
+                </form>
+                <button  id="closePopup">Cancelar</button>
+            </div>
+        </div>
+    </div>
     <head>
         <div id="div_head">
             <div id="form_head">
@@ -54,5 +67,14 @@
             <button onclick = "NovoRelato()">Novo Relato</button>
         </div>
     </main>
+    <footer>
+        <div>
+            <div id="absolute">
+                <div id="botoes-acao">
+                    <img src="../IMG/botao_guardiao 1.png" alt=""  class="bnt_gardiao" id="botao_guarda">
+                </div>
+              </div>
+        </div>
+    </footer>
 </body>
 </html>
