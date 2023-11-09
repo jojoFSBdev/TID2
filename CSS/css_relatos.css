@@ -1,7 +1,8 @@
 :root {
     --corfundo: rgba(233, 224, 252);
     --corEntradas: rgba(255, 255, 255, 0.50);
-    --bordas: #d1b7e5;
+    --bordaFraca: rgb(228, 85, 228);
+    --bordaForte: rgb(149, 2, 152);
     --corEscura: #4E2597;
 }
 
@@ -12,9 +13,9 @@ main {
 }
 
 .div_forum {
-    background-color: var(--corfundo) ;
     padding: 10px;
-    border-radius: 5px;
+    padding-top: 0;
+    border-radius: 3px;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -31,14 +32,18 @@ main {
 }
 
 .relato_conteudo div {
-    background-color: var(--corEntradas);
+    border: 2px solid var(--bordaForte);
+    background-color: var(--corfundo);
+    padding: 5px;
+    border-radius: 3px;
     width: auto;
 }
 
 
 .relato {
-    background-color: var(--corEntradas);
-    border-radius: 5px;
+    border: 2px solid var(--bordaForte);
+    background-color: var(--corfundo);
+    border-radius: 3px;
     padding: 5px;
 }
 
@@ -47,23 +52,24 @@ main {
     flex-direction: column;
     justify-content: center;
     width: auto;
-    align-items: center;
-    background-color: var(--corEntradas);
-    padding: 5px;
+    align-items: center;;
+    border: 2px solid var(--bordaForte);
+    background-color: var(--corfundo);
     border-radius: 3px;
+    padding: 5px;
 }
 
 .novo_relato input {
     width: 800px;
     border-radius: 3px;
-    background-color: #f6f0fa;
+    background-color: white;
     border: solid 2px var(--bordas);
 }
 
 .novo_relato textarea {
     width: 800px;
     border-radius: 3px;
-    background-color: #f6f0fa;
+    background-color: white;
     border: solid 2px var(--bordas);
 }
 
@@ -76,12 +82,14 @@ button {
 }
 
 .extra_forum {
+    border: 2px solid var(--bordaForte);
+    background-color: var(--corfundo);
+    border-radius: 3px;
     top: 0%;
     height: 300px;
     width: 300px;
-    background-color: var(--corfundo);
     margin: 5px;
-    border-radius: 5px;
+    border-radius: 3px;
     position:initial;
 }
 
