@@ -4,6 +4,9 @@ function NovoRelato(){
 
 function Cancelar(){
     document.querySelector(".novo_relato").style.display = "none";
+    
+    var titulo = document.getElementById("entrada_titulo").value = null;
+    var texto = document.getElementById("entrada_corpo").value = null;
 }
 
 function EnviarRelato(){
@@ -15,7 +18,7 @@ function EnviarRelato(){
 
     var titulo_relato = document.createElement('h2');
     var node_titulo = document.createTextNode(titulo)
-    var corpo_relato = document.createElement('textarea');
+    var corpo_relato = document.createElement('p');
     var node_corpo = document.createTextNode(texto);
 
 
@@ -26,5 +29,7 @@ function EnviarRelato(){
     div_relato.appendChild(corpo_relato);
     a_relato.appendChild(div_relato);
 
-    document.querySelector(".relato_conteudo").appendChild(a_relato)
+    document.querySelector(".relato_conteudo").appendChild(a_relato);
+
+    Cancelar();
 }

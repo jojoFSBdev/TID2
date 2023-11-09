@@ -1,5 +1,8 @@
 :root {
     --corfundo: rgba(233, 224, 252);
+    --corEntradas: rgba(255, 255, 255, 0.50);
+    --bordas: #d1b7e5;
+    --corEscura: #4E2597;
 }
 
 main { 
@@ -16,6 +19,7 @@ main {
     display: flex;
     flex-direction: column;
     margin: 5px;
+    color: var(--corEscura);
 }
 
 .relato_conteudo {
@@ -27,13 +31,13 @@ main {
 }
 
 .relato_conteudo div {
-    background-color: red;
+    background-color: var(--corEntradas);
     width: auto;
 }
 
 
 .relato {
-    background-color: red;
+    background-color: var(--corEntradas);
     border-radius: 5px;
     padding: 5px;
 }
@@ -44,14 +48,29 @@ main {
     justify-content: center;
     width: auto;
     align-items: center;
-    border: solid blue;
-    background-color: blueviolet;
+    background-color: var(--corEntradas);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.novo_relato input {
+    width: 800px;
+    border-radius: 3px;
+    background-color: var(--corfundo);
 }
 
 .novo_relato textarea {
     width: 800px;
     border-radius: 3px;
     background-color: var(--corfundo);
+}
+
+button {
+    color: white;
+    background-color: var(--corEscura);
+    border: 0;
+    border-radius: 3px;
+    padding: 5px;
 }
 
 .extra_forum {
