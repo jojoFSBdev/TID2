@@ -34,8 +34,15 @@ function EnviarRelato(){
     div_relato.appendChild(codinome_relato);
     a_relato.appendChild(div_relato);
 
+    var onclick_Expandir = document.createAttribute("onclick");
+    a_relato.setAttribute(onclick_Expandir);
+    onclick_Expandir.value = "ExpandirRelato()";
 
     document.querySelector(".relato_conteudo").appendChild(a_relato);
 
     Cancelar();
+}
+
+function ExpandirRelato(){
+    window.alert("FOI PORRA!");
 }
