@@ -15,6 +15,8 @@ function EnviarRelato(){
     var codinome = document.getElementById("entrada_codinome").value;
 
     var a_relato = document.createElement('a');
+    a_relato.setAttribute("id", "relato");
+    a_relato.setAttribute("onclick", "ExpandirRelato()");
     var div_relato = document.createElement('div');
 
     var titulo_relato = document.createElement('h2');
@@ -34,12 +36,8 @@ function EnviarRelato(){
     div_relato.appendChild(codinome_relato);
     a_relato.appendChild(div_relato);
 
-    var onclick_Expandir = document.createAttribute("onclick");
-    a_relato.setAttribute(onclick_Expandir);
-    onclick_Expandir.value = "ExpandirRelato()";
-
     document.querySelector(".relato_conteudo").appendChild(a_relato);
-
+    
     Cancelar();
 }
 
