@@ -1,5 +1,5 @@
 :root {
-    --corfundo: rgba(233, 224, 252);
+    --corfundo: rgba(233, 224, 252, 0);
     --corEntradas: rgba(255, 255, 255, 0.50);
     --bordaFraca: rgb(228, 85, 228);
     --bordaForte: rgb(149, 2, 152);
@@ -37,8 +37,19 @@ main {
     padding: 5px;
     border-radius: 3px;
     width: auto;
+    max-height: 150px;
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
+.relato_conteudo p {
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.relato_conteudo h6 {
+    margin: 1px;
+}
 
 .relato {
     border: 2px solid var(--bordaForte);
@@ -60,17 +71,22 @@ main {
 }
 
 .novo_relato input {
-    width: 800px;
+    width: 300px;
     border-radius: 3px;
     background-color: white;
-    border: solid 2px var(--bordas);
+    border: solid 2px var(--bordaForte);
 }
 
 .novo_relato textarea {
     width: 800px;
     border-radius: 3px;
     background-color: white;
-    border: solid 2px var(--bordas);
+    border: solid 2px var(--bordaForte);
+}
+
+.div_titulo_relato {
+    display: grid;
+    grid-template-columns: 400px 400px ;
 }
 
 button {
@@ -82,7 +98,6 @@ button {
 }
 
 .extra_forum {
-    border: 2px solid var(--bordaForte);
     background-color: var(--corfundo);
     border-radius: 3px;
     top: 0%;
@@ -90,11 +105,11 @@ button {
     width: 300px;
     margin: 5px;
     border-radius: 3px;
-    position:initial;
+    position: initial;
 }
 
 .extra_forum button {
     height: 30px;
     margin: 10px;
-    position: fixed;
+    position: absolute;
 }

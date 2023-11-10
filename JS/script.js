@@ -12,6 +12,7 @@ function Cancelar(){
 function EnviarRelato(){
     var titulo = document.getElementById("entrada_titulo").value;
     var texto = document.getElementById("entrada_corpo").value;
+    var codinome = document.getElementById("entrada_codinome").value;
 
     var a_relato = document.createElement('a');
     var div_relato = document.createElement('div');
@@ -20,14 +21,19 @@ function EnviarRelato(){
     var node_titulo = document.createTextNode(titulo)
     var corpo_relato = document.createElement('p');
     var node_corpo = document.createTextNode(texto);
+    var codinome_relato = document.createElement('h6');
+    var node_codinome = document.createTextNode('Autor: ' + codinome);
 
 
     titulo_relato.appendChild(node_titulo);
     corpo_relato.appendChild(node_corpo);
+    codinome_relato.appendChild(node_codinome);
 
     div_relato.appendChild(titulo_relato);
     div_relato.appendChild(corpo_relato);
+    div_relato.appendChild(codinome_relato);
     a_relato.appendChild(div_relato);
+
 
     document.querySelector(".relato_conteudo").appendChild(a_relato);
 

@@ -33,7 +33,7 @@
                 
                 <a href="{%url 'faq'%}">FAQ</a>
 
-                <a href="{%urel 'relatos'%}"><u>RELATOS</u></a>
+                <a href="{%urel 'relatos'%}"><u>FALA</u></a>
             </div>
             <hr>
         </div>
@@ -42,12 +42,18 @@
         <div class="div_forum">
             <div class="novo_relato">
                 <div class="div_titulo_relato">
-                    <p>Titulo</p>
-                    <input class = "estilo_titulo_relato" id = "entrada_titulo" type="text" placeholder="Insira o Titulo">
+                    <div>
+                        <p>Titulo</p>
+                        <input id = "entrada_titulo" type="text" placeholder="Insira o Titulo">
+                    </div>
+                    <div>
+                        <p>Codinome</p>
+                        <input id = "entrada_codinome"type="text" placeholder="Insira um codinome....">
+                    </div>
                 </div>
                 <div class="div_corpo_relato">
                     <p>Relato</p>
-                    <textarea class = "estilo_corpo_relato" id="entrada_corpo" cols="30" rows="10" placeholder="Diga algo..."></textarea>
+                    <textarea id="entrada_corpo" cols="30" rows="10" placeholder="Diga algo..."></textarea>
                 </div>
                 <div>
                     <button onclick = "Cancelar()">Cancelar</button>
@@ -59,6 +65,7 @@
                     <div>
                         <h2>Joaquim</h2>
                         <p>adasdasdasd</p>
+                        <h6>Autor: Joaquim</h6>
                     </div>
                 </a>
             </div>
