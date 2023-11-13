@@ -30,6 +30,7 @@ function EnviarRelato(){
     var titulo_relato = document.createElement('h2');
     var node_titulo = document.createTextNode(titulo)
     var corpo_relato = document.createElement('p');
+    corpo_relato.setAttribute("id", "p_relato_" + (contagem));
     var node_corpo = document.createTextNode(texto);
     var codinome_relato = document.createElement('h6');
     var node_codinome = document.createTextNode('Autor: ' + codinome);
@@ -57,5 +58,8 @@ function EnviarRelato(){
 }
 
 function ExpandirRelato(num){
-    //document.querySelector(".div_relato_"+ (num)).style.height = "500px";
+    var editar =  document.querySelector(".p_relato_"+ (num));
+    editar.style.height = "auto";
+    editar.style.overflow = "none";
+    // editar.style.overflow-wrap = "none";
 }
