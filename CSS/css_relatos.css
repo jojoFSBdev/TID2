@@ -42,7 +42,7 @@ main {
 }
 
 .relato_conteudo p {
-    height: 40px;
+    max-height: 40px;
     overflow: hidden;
 }
 

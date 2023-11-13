@@ -58,8 +58,10 @@ function EnviarRelato(){
 }
 
 function ExpandirRelato(num){
-    var editar =  document.querySelector(".p_relato_"+ (num));
+    var editar =  document.querySelector("#p_relato_"+ (num));
     editar.style.height = "auto";
     editar.style.overflow = "none";
-    // editar.style.overflow-wrap = "none";
+    editar.style.maxHeight = "auto";
+
+    window.alert("porra")
 }
