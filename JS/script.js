@@ -57,5 +57,5 @@ function EnviarRelato(){
 }
 
 function ExpandirRelato(num){
-    document.querySelector("div_relato_"+ (num)).style.height = "auto";
+    //document.querySelector(".div_relato_"+ (num)).style.height = "500px";
 }
