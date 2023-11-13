@@ -37,7 +37,6 @@ main {
     padding: 5px;
     border-radius: 3px;
     width: auto;
-    max-height: 150px;
     overflow: hidden;
     overflow-wrap: break-word ;
 }
@@ -52,10 +51,7 @@ main {
 }
 
 .relato {
-    border: 2px solid var(--bordaForte);
-    background-color: var(--corfundo);
-    border-radius: 3px;
-    padding: 5px;
+   
 }
 
 .novo_relato {
